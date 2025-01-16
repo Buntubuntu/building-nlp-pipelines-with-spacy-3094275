@@ -4,21 +4,21 @@ text = 'Ram goes to college everyday by car.'
 
 # Importing spacy and getting all attributes.
 
-nlp = _________
+nlp = English()
 
 # Creating doc object
 
-doc = _________
+doc = nlp(text)
 
 for token in doc:
   
   # Getting token’s text, part of speech tags and dependency labels
   
-  token_text = _________ # Getting the corresponding text
+  token_text = token.text # Getting the corresponding text
   
-  token_dep = _________ # Getting the Dependency label
+  token_dep = token.dep_ # Getting the Dependency label
   
-  token_pos = _________ # Getting the POS Tag
+  token_pos = token.pos_ # Getting the POS Tag
 
   # Printing entities text and label attributes
   
@@ -31,12 +31,12 @@ text = 'Ram goes to college everyday by car.'
 
 # Importing spacy and getting all attributes.
 
-nlp = _________
+nlp = English()
 
-doc = _________
+doc = nlp(text)
 
-for _________ in _________:
+for token in doc:
   
   # Printing the entity text and label
   
-  print(_________, _________)
+  print(entity.text, entity.label_)
